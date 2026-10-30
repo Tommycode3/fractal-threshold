@@ -11,8 +11,6 @@
 
 ---
 
-## Why I built this
-
 <!-- TODO(Tommaso): dictate 3-4 lines in your own words -->
 
 ---
