@@ -11,7 +11,10 @@ import pytest
 from hrvthreshold import alpha1
 from hrvthreshold.synth import noise_with_alpha
 
-nolds = pytest.importorskip("nolds")
+try:
+    import nolds
+except Exception as exc:  # nolds missing, or broken import on some Python versions
+    pytest.skip(f"nolds unavailable: {exc}", allow_module_level=True)
 
 
 @pytest.mark.parametrize("a", [0.3, 0.5, 0.75, 1.0, 1.5])
