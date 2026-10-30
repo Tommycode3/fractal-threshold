@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the original DFA-alpha1 papers listed in the README."
+title: "hrv-threshold: validated DFA-alpha1 HRV thresholds and recovery metrics"
+version: 0.1.0
+date-released: 2026-10-30
+license: MIT
+authors:
+  - family-names: Maggiolo
+    given-names: Tommaso
+keywords:
+  - heart rate variability
+  - detrended fluctuation analysis
+  - DFA alpha1
+  - aerobic threshold
+  - endurance training
+references:
+  - type: article
+    authors:
+      - family-names: Peng
+        given-names: C.-K.
+      - family-names: Havlin
+        given-names: S.
+      - family-names: Stanley
+        given-names: H. E.
+      - family-names: Goldberger
+        given-names: A. L.
+    title: "Quantification of scaling exponents and crossover phenomena in nonstationary heartbeat time series"
+    journal: Chaos
+    volume: 5
+    start: 82
+    year: 1995
+  - type: article
+    authors:
+      - family-names: Rogers
+        given-names: Bruce
+      - family-names: Giles
+        given-names: David
+      - family-names: Draper
+        given-names: Nick
+      - family-names: Hoos
+        given-names: Olaf
+      - family-names: Gronwald
+        given-names: Thomas
+    title: "A New Detection Method Defining the Aerobic Threshold for Endurance Exercise and Training Prescription Based on Fractal Correlation Properties of Heart Rate Variability"
+    journal: Frontiers in Physiology
+    volume: 11
+    start: 596567
+    year: 2021

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hrv-threshold"
+version = "0.1.0"
+description = "Validated DFA-alpha1 HRV analysis: aerobic/anaerobic thresholds from RR intervals, plus recovery metrics."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Tommaso Maggiolo" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11", "matplotlib>=3.7"]
+keywords = ["hrv", "dfa", "alpha1", "heart-rate-variability", "endurance", "aerobic-threshold"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Intended Audience :: Science/Research",
+]
+
+[project.optional-dependencies]
+fit = ["fitdecode>=0.10"]
+validate = ["nolds>=0.6", "wfdb>=4.1"]
+dev = ["pytest>=7", "fitdecode>=0.10", "nolds>=0.6"]
+
+[project.scripts]
+hrv-threshold = "hrvthreshold.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
